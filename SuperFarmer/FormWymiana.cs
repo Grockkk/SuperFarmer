@@ -78,8 +78,8 @@ namespace SuperFarmer
             TabelaWymian.Columns.Clear();
             TabelaWymian.Items.Clear();
 
-            TabelaWymian.Columns.Add("Zamieniam", 120);
-            TabelaWymian.Columns.Add("Na", 120);
+            TabelaWymian.Columns.Add("Zabierasz", 120);
+            TabelaWymian.Columns.Add("Oddajesz", 120);
 
             var wymiany = new Dictionary<string, string>
             {
@@ -97,6 +97,11 @@ namespace SuperFarmer
                 item.SubItems.Add(wpis.Value);
                 TabelaWymian.Items.Add(item);
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

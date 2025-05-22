@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperFarmer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf9ac5b8565e7dc7fe15613d922cae044ee89e9f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f0e19b2fcd4b2c1281d9acd5546f53878110f14")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperFarmer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperFarmer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

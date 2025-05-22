@@ -38,6 +38,7 @@
             label3 = new Label();
             TabelaWymian = new ListView();
             comboTarget = new ComboBox();
+            label4 = new Label();
             SuspendLayout();
             // 
             // BoxFrom
@@ -53,14 +54,14 @@
             BoxTo.FormattingEnabled = true;
             BoxTo.Location = new Point(200, 29);
             BoxTo.Name = "BoxTo";
-            BoxTo.Size = new Size(121, 23);
+            BoxTo.Size = new Size(137, 23);
             BoxTo.TabIndex = 1;
             // 
             // textAmount
             // 
             textAmount.Location = new Point(359, 29);
             textAmount.Name = "textAmount";
-            textAmount.Size = new Size(100, 23);
+            textAmount.Size = new Size(112, 23);
             textAmount.TabIndex = 2;
             // 
             // Accept
@@ -121,16 +122,27 @@
             // comboTarget
             // 
             comboTarget.FormattingEnabled = true;
-            comboTarget.Location = new Point(200, 68);
+            comboTarget.Location = new Point(200, 76);
             comboTarget.Name = "comboTarget";
-            comboTarget.Size = new Size(121, 23);
+            comboTarget.Size = new Size(137, 23);
             comboTarget.TabIndex = 9;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(200, 55);
+            label4.Name = "label4";
+            label4.Size = new Size(137, 15);
+            label4.TabIndex = 10;
+            label4.Text = "Z kim dokonać wymiany";
+            label4.Click += label4_Click;
             // 
             // FormWymiana
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(776, 217);
+            Controls.Add(label4);
             Controls.Add(comboTarget);
             Controls.Add(TabelaWymian);
             Controls.Add(label3);
@@ -159,5 +171,6 @@
         private Label label3;
         private ListView TabelaWymian;
         private ComboBox comboTarget;
+        private Label label4;
     }
 }

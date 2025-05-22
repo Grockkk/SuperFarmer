@@ -79,7 +79,7 @@
             // 
             // listView1
             // 
-            listView1.Location = new Point(24, 389);
+            listView1.Location = new Point(50, 389);
             listView1.Name = "listView1";
             listView1.Size = new Size(142, 210);
             listView1.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             // listView2
             // 
-            listView2.Location = new Point(247, 389);
+            listView2.Location = new Point(300, 389);
             listView2.Name = "listView2";
             listView2.Size = new Size(142, 210);
             listView2.TabIndex = 4;
@@ -95,7 +95,7 @@
             // 
             // listView3
             // 
-            listView3.Location = new Point(469, 389);
+            listView3.Location = new Point(550, 389);
             listView3.Name = "listView3";
             listView3.Size = new Size(142, 210);
             listView3.TabIndex = 5;
@@ -103,7 +103,7 @@
             // 
             // listView4
             // 
-            listView4.Location = new Point(686, 389);
+            listView4.Location = new Point(800, 389);
             listView4.Name = "listView4";
             listView4.Size = new Size(142, 210);
             listView4.TabIndex = 6;
@@ -114,7 +114,7 @@
             label1.AccessibleDescription = "";
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 19F);
-            label1.Location = new Point(42, 623);
+            label1.Location = new Point(70, 623);
             label1.Name = "label1";
             label1.Size = new Size(100, 36);
             label1.TabIndex = 7;
@@ -125,7 +125,7 @@
             label2.AccessibleDescription = "";
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 19F);
-            label2.Location = new Point(267, 623);
+            label2.Location = new Point(322, 623);
             label2.Name = "label2";
             label2.Size = new Size(100, 36);
             label2.TabIndex = 8;
@@ -136,7 +136,7 @@
             label3.AccessibleDescription = "";
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 19F);
-            label3.Location = new Point(488, 623);
+            label3.Location = new Point(571, 623);
             label3.Name = "label3";
             label3.Size = new Size(100, 36);
             label3.TabIndex = 9;
@@ -147,7 +147,7 @@
             label4.AccessibleDescription = "";
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 19F);
-            label4.Location = new Point(707, 623);
+            label4.Location = new Point(822, 623);
             label4.Name = "label4";
             label4.Size = new Size(100, 36);
             label4.TabIndex = 10;
@@ -166,25 +166,26 @@
             label5.AccessibleDescription = "";
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14F);
-            label5.Location = new Point(1202, 246);
+            label5.Location = new Point(1229, 245);
             label5.Name = "label5";
-            label5.Size = new Size(177, 25);
+            label5.Size = new Size(146, 25);
             label5.TabIndex = 12;
-            label5.Text = "Pozostałe zwierzęta";
+            label5.Text = "Stado główne    ";
+            label5.Click += label5_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Location = new Point(508, 76);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(201, 155);
+            pictureBox1.Size = new Size(200, 155);
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(737, 76);
+            pictureBox2.Location = new Point(733, 76);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(196, 155);
+            pictureBox2.Size = new Size(200, 155);
             pictureBox2.TabIndex = 14;
             pictureBox2.TabStop = false;
             // 

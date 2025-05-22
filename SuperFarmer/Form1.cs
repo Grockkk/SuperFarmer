@@ -13,7 +13,7 @@ namespace SuperFarmer
 
         private int currentPlayerIndex = 0;
 
-        private bool isDiceUsed;
+        private bool areDicesUsed;
         private bool exchangeUsed;
 
         public Form1()
@@ -46,9 +46,9 @@ namespace SuperFarmer
             players.Clear();
 
             for (int i = 1; i <= liczbaGraczy; i++)
-                players.Add(new Player($"Gracz{i}", i));
+                players.Add(new Player($"Gracz {i}", i));
 
-            isDiceUsed = false;
+            areDicesUsed = false;
             exchangeUsed = false;
 
             SetCollumns(listView1);
@@ -66,7 +66,7 @@ namespace SuperFarmer
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (isDiceUsed) return;
+            if (areDicesUsed) return;
 
             int index1 = rnd.Next(pictures1.Length);
             int index2 = rnd.Next(pictures2.Length);
@@ -110,7 +110,6 @@ namespace SuperFarmer
                 {
                     player.SmallDogsNumber--;
                     glowneStado["MałyPies"]++;
-                    MessageBox.Show("Mały pies ochronił przed lisem!");
                 }
                 else if (player.RabbitNumber > 1)
                 {
@@ -201,12 +200,12 @@ namespace SuperFarmer
 
             RefreshAllViews();
             EnterValuesListViewStado();
-            isDiceUsed = true;
+            areDicesUsed = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!isDiceUsed)
+            if (!areDicesUsed)
             {
                 MessageBox.Show("Musisz najpierw rzucić kostkami!");
                 return;
@@ -219,7 +218,8 @@ namespace SuperFarmer
                 currentPlayerIndex = 0;
             }
 
-            isDiceUsed = false;
+            areDicesUsed = false;
+            exchangeUsed = false;
 
             EnterValuesListView(players[currentPlayerIndex], GetListViewByPlayerIndex(currentPlayerIndex));
             RefreshAllViews();
@@ -295,6 +295,17 @@ namespace SuperFarmer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (areDicesUsed)
+            {
+                MessageBox.Show("Wymiane dokonać można jedynie przed rzutem kostkami");
+                return;
+            }
+
+            if (exchangeUsed)
+            {
+                MessageBox.Show("Możliwa jedna wymiana na rundę");
+                return;
+            }
             var player = players[currentPlayerIndex];
 
             FormWymiana form = new FormWymiana(player, glowneStado, players, currentPlayerIndex);
@@ -432,9 +443,10 @@ namespace SuperFarmer
             }
 
             MessageBox.Show("Wymiana zakończona sukcesem.");
+
+            exchangeUsed = true;
             RefreshAllViews();
             EnterValuesListViewStado();
-            exchangeUsed = true;
         }
 
         Dictionary<(string from, string to), int> exchangeRates = new Dictionary<(string, string), int>
@@ -516,6 +528,11 @@ namespace SuperFarmer
                 case 3: return listView4;
                 default: return null;
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
