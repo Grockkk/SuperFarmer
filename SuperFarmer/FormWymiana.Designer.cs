@@ -47,7 +47,6 @@
             BoxFrom.Name = "BoxFrom";
             BoxFrom.Size = new Size(121, 23);
             BoxFrom.TabIndex = 0;
-            BoxFrom.SelectedIndexChanged += BoxFrom_SelectedIndexChanged;
             // 
             // BoxTo
             // 
@@ -56,7 +55,6 @@
             BoxTo.Name = "BoxTo";
             BoxTo.Size = new Size(121, 23);
             BoxTo.TabIndex = 1;
-            BoxTo.SelectedIndexChanged += BoxTo_SelectedIndexChanged;
             // 
             // textAmount
             // 
@@ -93,7 +91,6 @@
             label1.Size = new Size(88, 15);
             label1.TabIndex = 5;
             label1.Text = "Twoje zwierzęta";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -112,7 +109,6 @@
             label3.Size = new Size(51, 15);
             label3.TabIndex = 7;
             label3.Text = "Ile kupić";
-            label3.Click += label3_Click;
             // 
             // TabelaWymian
             // 
@@ -121,7 +117,6 @@
             TabelaWymian.Size = new Size(244, 159);
             TabelaWymian.TabIndex = 8;
             TabelaWymian.UseCompatibleStateImageBehavior = false;
-            TabelaWymian.SelectedIndexChanged += TabelaWymian_SelectedIndexChanged;
             // 
             // comboTarget
             // 
@@ -130,7 +125,6 @@
             comboTarget.Name = "comboTarget";
             comboTarget.Size = new Size(121, 23);
             comboTarget.TabIndex = 9;
-            comboTarget.SelectedIndexChanged += comboTarget_SelectedIndexChanged;
             // 
             // FormWymiana
             // 
@@ -149,7 +143,6 @@
             Controls.Add(BoxFrom);
             Name = "FormWymiana";
             Text = "FormWymiana";
-            Load += FormWymiana_Load;
             ResumeLayout(false);
             PerformLayout();
         }

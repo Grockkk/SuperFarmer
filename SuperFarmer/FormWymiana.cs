@@ -43,7 +43,6 @@ namespace SuperFarmer
 
             comboTarget.Items.Add("Stado główne");
 
-            // Dodajemy innych graczy do comboboxa
             for (int i = 0; i < gracze.Count; i++)
             {
                 if (i != aktywnyIndex)
@@ -52,32 +51,8 @@ namespace SuperFarmer
                 }
             }
 
-            comboTarget.SelectedIndex = 0; // Domyślnie stado
+            comboTarget.SelectedIndex = 0;
             UzupelnijTabeleWymian();
-        }
-
-        private void BoxFrom_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BoxTo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void FormWymiana_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void Accept_Click(object sender, EventArgs e)
@@ -95,11 +70,6 @@ namespace SuperFarmer
         private void Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void TabelaWymian_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void UzupelnijTabeleWymian()
@@ -127,11 +97,6 @@ namespace SuperFarmer
                 item.SubItems.Add(wpis.Value);
                 TabelaWymian.Items.Add(item);
             }
-        }
-
-        private void comboTarget_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
